@@ -20,7 +20,7 @@ class CounterBloc extends Bloc<CounterEvent, int> {
         yield state - 1;
         break;
       default:
-        yield state;
+        throw Exception('oops');
     }
   }
 }
